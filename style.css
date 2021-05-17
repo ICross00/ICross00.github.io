@@ -1,0 +1,29 @@
+body {
+    padding: 10px;
+}
+
+#viewport {
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    width: 1280px;
+    height: 720px;
+    padding: 0;
+}
+
+#textbox {
+    padding: 12px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    width: 1280px;
+
+    font-size: 18px;
+    font: times;
+}
+
+#info {
+    font-size: 24px;
+    display: block;
+}

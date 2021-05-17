@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="http://momentjs.com/downloads/moment-with-locales.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <link rel=stylesheet href="https://s3-us-west-2.amazonaws.com/colors-css/2.2.0/colors.min.css">
+
+</head>
+
+<body class="bg-silver">
+    <div id="viewport" class="bg-white mb-2 brd border--blue mb-4">
+        <canvas id="canvas" width="1280" height="720"></canvas>
+    </div>
+
+    <div class="d-flex p-2 bd-highlight justify-content-center">
+        <button type="button" class="btn btn-primary btn-lg btn-block w-50" onclick="requestStart()"
+            id="startbutton">Start</button>
+    </div>
+
+    <div id="textbox" class="bg-white brd border--gray black" role="alert">
+        <b>Instructions</b></br>
+        - Familiarize yourself with the button layout before pressing start.</br>
+        - When ready, press the <b>'Start'</b> button. The experiment will begin when you click the first black
+        square.</br>
+        - The grey button indicates which button will turn black next.</br>
+        - When the test starts, click the black buttons as they appear as fast as possible until no more buttons
+        remain.</br>
+        - Wait until your score has been recorded to receive further instructions.</br>
+        <br>
+        Please remember that this is a test of how the hardware device facilitates your interaction with the computer,
+        and not a test of your skill.
+    </div>
+
+    <script src="util.js"></script>
+    <script src="buttons.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
