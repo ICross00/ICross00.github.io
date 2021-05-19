@@ -137,7 +137,7 @@ function finish() {
 
     if (!cont) {
         //Save results table
-        download(JSON.stringify(result), "experiment-" + moment().format("YYYY-MM-DD-HH:mm:ss"));
+        download(JSON.stringify(result), "experiment-" + Date.now().toString());
     } else {
         state = "awaitstart";
         initLayout();

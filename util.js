@@ -1,3 +1,5 @@
+
+
 function download(text, fname) {
     const a = document.createElement('a');
     const file = new Blob([text], { type: "text/plain" });
@@ -5,6 +7,7 @@ function download(text, fname) {
     a.href = URL.createObjectURL(file);
     a.download = fname;
     a.click();
+
 
     URL.revokeObjectURL(a.href);
 }
