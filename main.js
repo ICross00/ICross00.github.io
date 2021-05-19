@@ -144,12 +144,10 @@ function finish() {
 
         const sbutton = document.getElementById("startbutton");
         sbutton.disabled = false;
-
-        cclick = 0;
-        tclick = 0;
     }
 
-
+    cclick = 0;
+    tclick = 0;
 }
 
 function update() {
